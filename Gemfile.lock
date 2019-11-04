@@ -30,8 +30,11 @@ GEM
     mime-types (3.3)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.1009)
+    mini_portile2 (2.4.0)
     minitest (5.12.2)
     netrc (0.11.0)
+    nokogiri (1.10.5)
+      mini_portile2 (~> 2.4.0)
     parallel (1.18.0)
     parser (2.6.5.0)
       ast (~> 2.4.0)
@@ -82,6 +85,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   faker
+  nokogiri
   pry
   rake
   rest-client
