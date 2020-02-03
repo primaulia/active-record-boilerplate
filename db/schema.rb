@@ -10,17 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+# This file will automatically updated everytime you ran the migration file
 ActiveRecord::Schema.define(version: 2020_02_03_095922) do
-  # class Restaurant
-  #   def initialize(attributes)
-  #     @name = attributes[:name]
-  #     @address = attributes[:address]
-  #     @rating = attributes[:rating]
-  #   end
-  # end
-
-
-
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
     t.string "address"

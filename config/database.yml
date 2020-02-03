@@ -1,3 +1,4 @@
 development:
   adapter: "sqlite3"
   database: "db/development.sqlite3"
+# this file is to configure the db with the rake command
