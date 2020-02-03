@@ -10,23 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_04_104855) do
+ActiveRecord::Schema.define(version: 2020_02_03_095922) do
+  # class Restaurant
+  #   def initialize(attributes)
+  #     @name = attributes[:name]
+  #     @address = attributes[:address]
+  #     @rating = attributes[:rating]
+  #   end
+  # end
 
-  create_table "movies", force: :cascade do |t|
-    t.string "title"
-    t.integer "year"
-    t.string "summary"
-    t.string "director"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
+    t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "rating", default: 0, null: false
-    t.string "chef_name"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
